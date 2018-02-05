@@ -228,7 +228,7 @@ I start my morning with a cup of coffee and
 上面两种方法都会输出：
 
  
-![图片无法显示的替代文本](icon/markdown.png "markdown")
+![图片无法显示的替代文本](icon/markdown.pngs "markdown")
 
 # 六. 代码片段   
 
