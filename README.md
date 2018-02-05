@@ -64,12 +64,13 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 Markdown 使用星号和下划线来标记需要强调的区段。
 
-``使用这种符号 *are emphasized*
+```
+使用这种符号 *are emphasized*
 使用这种符号 _are emphasized also_
 
 使用两个这种符号**strong emphasis**
 使用两个这种符号 __use two underscores instead__
-``
+```
 
 # 四. 清单
 
@@ -203,8 +204,9 @@ title 属性是选择性的，连结名称可以用字母、数字和空格，�
 
     <img src="/path/to/img.jpg" alt="alt text" title="Title" />
 
-### 程式码 ###
-    
+
+# 六. 代码片段   
+
 在一般的段落文字中，你可以使用反引号 `` ` `` 来标记程式码区段，区段内的 `&`、`<` 和 `>` 都会被自动的转换成 HTML 实体，这项特性让你可以很容易的在程式码区段内插入 HTML 码：
 
     I strongly recommend against using any `<blink>` tags.
