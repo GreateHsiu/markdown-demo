@@ -1,7 +1,6 @@
 ### markdown 语法介绍
-![Markdown](icon/markdown.png)
-<br/>
-![Markdown](http://markdown.tw/images/208x128.png)
+
+![markdown](icon/markdown.png)
 
 # 一. 标题
 markdown 支援两种标题的语法，[setext] 1 和 [atx] 2 形式。
