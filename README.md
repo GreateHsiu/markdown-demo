@@ -1,5 +1,5 @@
 ### markdown 语法介绍
-~~https://github.com/xuzchu/markdown-demo/blob/master/icon/markdown.png~~
+![Markdown]（icon/markdown.png）
 <br/>
 ![Markdown](http://markdown.tw/images/208x128.png)
 
