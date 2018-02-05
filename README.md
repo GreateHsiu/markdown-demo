@@ -262,6 +262,78 @@ I strongly recommend against using any `<blink>` tags.
 I wish SmartyPants used named entities like `&mdash;`
 instead of decimal-encoded entites like `&#8212;`.
 
+Java示例：
+
+```Java
+import java.io.IOException;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/sendPost")
+public class ServletLogin extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8"); 
+        response.setContentType("text/html;charset=UTF-8");
+        Map<String,Object> map = HttpUtil.parseRequest(request);
+        System.out.println("timestamp:"+HttpUtil.getRequestBodyValue(map,"timestamp"));
+        System.out.println("key:"+HttpUtil.getRequestBodyValue(map,"key"));
+        System.out.println("sign:"+HttpUtil.getRequestBodyValue(map,"sign"));
+        System.out.println("message:"+HttpUtil.getRequestBodyValue(map,"message"));
+    }
+   
+}
+```
+Python示例：
+
+```Python
+_user ="alex"
+_passwd = "abc123"
+counter = 0
+while counter <3:
+    username = input("Username:")
+    password = input("Password:")
+    if username == _user and password == _passwd :
+        print("Welcome %s login...." % _user)
+        break #跳出，中断
+    else:
+        print("Invalid username or password !")
+    counter += 1
+    if counter == 3:
+        keep_going_choice = input("还想玩么?[y/n]")
+        if keep_going_choice == "y":
+            counter = 0
+
+else:
+    print("要不要脸，臭流氓啊，小虎。")
+```
+
+Shell示例：
+
+```Shell
+function UninstallJDK()
+{
+	# 卸载安装的rpm包		
+ temp_rpm=$(rpm -qa | grep -i jdk)
+     for item in $temp_rpm
+     do
+         rpm -e $item --nodeps
+    done 
+	
+	echo "jdk 卸载完成！"
+}
+
+```
+
+
 如果要建立一个已经格式化好的程式码区块，只要每行都缩排 4 个空格或是一个 tab 就可以了，而 `&`、`<` 和 `>` 也一样会自动转成 HTML 实体。
 
 Markdown:
