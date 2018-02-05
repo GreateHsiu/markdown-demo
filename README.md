@@ -4,16 +4,16 @@
 
 目录：
 
-1. [标题](#一. 标题)
-1. [区块引用](#二. 区块引用)
-1. [修辞和强调](#三. 修辞和强调)
-1. [清单](#四. 清单)
-1. [连结](#五. 连结)
-1. [代码片段](#六. 代码片段)
+1. [标题](#标题)
+1. [区块引用](#区块引用)
+1. [修辞和强调](#修辞和强调)
+1. [清单](#清单)
+1. [连结](#连结)
+1. [代码片段](#代码片段)
 1. [参考资料](#参考资料)
 
 
-# 一. 标题
+## 标题
 
 markdown 支援两种标题的语法，[setext] 1 和 [atx] 2 形式。
 
@@ -67,7 +67,7 @@ markdown 支援两种标题的语法，[setext] 1 和 [atx] 2 形式。
 
 ###### 六级标题
 
-# 二. 区块引用
+## 区块引用
 
 
 * 普通区块引用
@@ -89,7 +89,7 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 > Back to the first level.
 
 
-# 三. 修辞和强调
+## 修辞和强调
 
 
 Markdown 使用星号和下划线来标记需要强调的区段。
@@ -111,7 +111,7 @@ Markdown 使用星号和下划线来标记需要强调的区段。
 使用两个这种符号 __use two underscores instead__
 
 
-# 四. 清单
+## 清单
 
 无序清单使用星号、加号和减号来做为清单的项目标记，这些符号是都可以使用的，使用星号：
 
@@ -167,7 +167,7 @@ Markdown 使用星号和下划线来标记需要强调的区段。
 
 
 
-# 五. 连结
+## 连结
 
 Markdown 支援两种形式的连结语法： *行内* 和 *参考* 两种形式，两种都是使用角括号来把文字转成连结。
 
@@ -221,7 +221,7 @@ I start my morning with a cup of coffee and
 [ny times]: http://www.nytimes.com/
 
 
-# 五. 图片
+## 图片
 
 
 图片的语法和连结很像。
@@ -246,7 +246,7 @@ I start my morning with a cup of coffee and
 
 [image1]: icon/markdown.png "markdown icon"
 
-# 六. 代码片段   
+## 代码片段   
 
 在一般的段落文字中，你可以使用反引号 `` ` `` 来标记程式码区段，区段内的 `&`、`<` 和 `>` 都会被自动的转换成 HTML 实体，这项特性让你可以很容易的在程式码区段内插入 HTML 码：
 
@@ -284,7 +284,7 @@ you've got to put paragraph tags in your blockquotes:
 
 
 
-# 参考资料：
+## 参考资料：
 
 - [commonmark.org](http://commonmark.org/help/)
 - [www.w3school.com.cn](http://www.w3school.com.cn)
