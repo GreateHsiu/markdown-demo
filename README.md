@@ -227,8 +227,8 @@ I start my morning with a cup of coffee and
 
 上面两种方法都会输出：
 
-    <img src="/path/to/img.jpg" alt="alt text" title="Title" />
-
+ 
+![image demo](icon/markdown.png "markdown")
 
 # 六. 代码片段   
 
