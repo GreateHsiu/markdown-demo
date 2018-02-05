@@ -19,9 +19,9 @@ markdown 支援两种标题的语法，[setext] 1 和 [atx] 2 形式。
 	```
     
 效果：
+
 大标题
 =
-
 小标题
 -
 
@@ -43,6 +43,7 @@ markdown 支援两种标题的语法，[setext] 1 和 [atx] 2 形式。
 	
 	```
 效果：
+
 # 一级标题
 
 ## 二级标题
@@ -90,6 +91,15 @@ Markdown 使用星号和下划线来标记需要强调的区段。
 使用两个这种符号 __use two underscores instead__
 ```
 
+效果：
+
+使用这种符号 *are emphasized*
+使用这种符号 _are emphasized also_
+
+使用两个这种符号**strong emphasis**
+使用两个这种符号 __use two underscores instead__
+
+
 # 四. 清单
 
 无序清单使用星号、加号和减号来做为清单的项目标记，这些符号是都可以使用的，使用星号：
@@ -112,11 +122,9 @@ Markdown 使用星号和下划线来标记需要强调的区段。
 
 都会输出：
 
-    <ul>
-    <li>Candy.</li>
-    <li>Gum.</li>
-    <li>Booze.</li>
-    </ul>
+*   Candy.
+*   Gum.
+*   Booze.
 
 有序的清单则是使用一般的数字接着一个英文句点作为项目标记：
 
@@ -126,11 +134,9 @@ Markdown 使用星号和下划线来标记需要强调的区段。
 
 输出：
 
-    <ol>
-    <li>Red</li>
-    <li>Green</li>
-    <li>Blue</li>
-    </ol>
+1.  Red
+2.  Green
+3.  Blue
 
 如果你在项目之间插入空行，那项目的内容会备用 `<p>` 包起来，你也可以在一个项目内放上多个段落，只要在它前面缩排 4 个空白或 1 个 tab 。
 
@@ -142,12 +148,12 @@ Markdown 使用星号和下划线来标记需要强调的区段。
 
 输出：
 
-    <ul>
-    <li><p>A list item.</p>
-    <p>With multiple paragraphs.</p></li>
-    <li><p>Another item in the list.</p></li>
-    </ul>
-    
+*   A list item.
+
+    With multiple paragraphs.
+
+*   Another item in the list.
+
 
 
 # 五. 连结
@@ -160,8 +166,7 @@ Markdown 支援两种形式的连结语法： *行内* 和 *参考* 两种形式
 
 输出：
 
-    <p>This is an <a href="http://example.com/">
-    example link</a>.</p>
+This is an [example link](http://example.com/).
 
 你也可以选择性的加上 title 属性：
 
@@ -169,8 +174,8 @@ Markdown 支援两种形式的连结语法： *行内* 和 *参考* 两种形式
 
 输出：
 
-    <p>This is an <a href="http://example.com/" title="With a Title">
-    example link</a>.</p>
+This is an [example link](http://example.com/ "With a Title").
+
 
 参考形式的连结让你可以为连结定一个名称，之后你可以在文件的其他地方定义该连结的内容：
 
@@ -183,10 +188,12 @@ Markdown 支援两种形式的连结语法： *行内* 和 *参考* 两种形式
 
 输出：
 
-    <p>I get 10 times more traffic from <a href="http://google.com/"
-    title="Google">Google</a> than from <a href="http://search.yahoo.com/"
-    title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/"
-    title="MSN Search">MSN</a>.</p>
+I get 10 times more traffic from [Google][1] than from
+[Yahoo][2] or [MSN][3].
+
+[1]: http://google.com/        "Google"
+[2]: http://search.yahoo.com/  "Yahoo Search"
+[3]: http://search.msn.com/    "MSN Search"
 
 title 属性是选择性的，连结名称可以用字母、数字和空格，但是不分大小写：
 
@@ -197,10 +204,10 @@ title 属性是选择性的，连结名称可以用字母、数字和空格，�
 
 输出：
 
-    <p>I start my morning with a cup of coffee and
-    <a href="http://www.nytimes.com/">The New York Times</a>.</p>
+I start my morning with a cup of coffee and
+[The New York Times][NY Times].
 
-
+[ny times]: http://www.nytimes.com/
 
 
 # 五. 图片
@@ -234,12 +241,10 @@ title 属性是选择性的，连结名称可以用字母、数字和空格，�
 
 输出：
 
-    <p>I strongly recommend against using any
-    <code>&lt;blink&gt;</code> tags.</p>
-    
-    <p>I wish SmartyPants used named entities like
-    <code>&amp;mdash;</code> instead of decimal-encoded
-    entites like <code>&amp;#8212;</code>.</p>
+I strongly recommend against using any `<blink>` tags.
+
+I wish SmartyPants used named entities like `&mdash;`
+instead of decimal-encoded entites like `&#8212;`.
 
 如果要建立一个已经格式化好的程式码区块，只要每行都缩排 4 个空格或是一个 tab 就可以了，而 `&`、`<` 和 `>` 也一样会自动转成 HTML 实体。
 
@@ -254,14 +259,12 @@ Markdown:
 
 输出：
 
-    <p>If you want your page to validate under XHTML 1.0 Strict,
-    you've got to put paragraph tags in your blockquotes:</p>
-    
-    <pre><code>&lt;blockquote&gt;
-        &lt;p&gt;For example.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    </code></pre>
+If you want your page to validate under XHTML 1.0 Strict,
+you've got to put paragraph tags in your blockquotes:
 
+<blockquote>
+    <p>For example.</p>
+</blockquote>
 
 
 
