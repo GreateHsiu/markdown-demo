@@ -286,9 +286,9 @@ you've got to put paragraph tags in your blockquotes:
 
 ## 参考资料：
 
-- [commonmark.org](http://commonmark.org/help/)
-- [www.w3school.com.cn](http://www.w3school.com.cn)
-- [blog.csdn.net details/52127634](http://blog.csdn.net/qq_20044689/article/details/52127634)
+1. [commonmark.org]: http://commonmark.org/help/ "markdown教程"
+1. [www.w3school.com.cn]：http://www.w3school.com.cn "html语法"
+1. [blog.csdn.net details/52127634]：http://blog.csdn.net/qq_20044689/article/details/52127634 "CSDN博客"
 
 
 
